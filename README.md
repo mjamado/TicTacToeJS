@@ -4,7 +4,7 @@
 
 ### Author and License ###
 
-Marco Amado mjamado@dreamsincode.com
+![Marco Amado's Gravatar](http://1.gravatar.com/avatar/1a11649fa31edc86ddbfa4466ebf560b?s=40&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&r=G) Marco Amado mjamado@dreamsincode.com
 
 Creative Commons 2.5 Portugal BY-NC-SA
 
