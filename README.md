@@ -65,7 +65,7 @@ tictactoe.init('ticTacToeHolder');
 
 If you want, as a second parameter, you can pass an object with translations for the game strings (here are the portuguese ones):
 
-```json
+```javascript
 {
 	me: "Eu",
 	you: "Tu",
