@@ -41,7 +41,7 @@ You can see that last call in the `play` function. Everytime there's a play to b
 - can I win now? 
 - in case I can't, do I have to block a winning position from the opponent?
 
-If everything went normally, a strategic play must be made. I won't rundown the options: there's a flowchart in this repository with the full strategy, and I implement it fully in the `strategicPlay` function.
+If everything went normally, a strategic play must be made. I won't rundown the options: there's a flowchart in this repository (`tictactoe.png`) with the full strategy, and I implement it fully in the `strategicPlay` function.
 
 A last word of warning about the code: beware of the board rotation in the `playChoose` function. I could've done that in tenths of other ways, but that was what looked more sleek, altthough I'll admit it's not the easiest to understand.
 
@@ -52,7 +52,7 @@ A last word of warning about the code: beware of the board rotation in the `play
 First and foremost, include the .js file (or a minimized, gzipped one) in your page:
 
 ```html
-&lt;script type="text/javascript" src="tictactoe.js"&gt;&lt;/script&gt;
+<script type="text/javascript" src="tictactoe.js"></script>
 ```
 
 Then, style the game components via CSS. I included a SCSS file with everything necessary (don't know what SCSS is? [What a good day to learn](http://sass-lang.com/)).
