@@ -1,4 +1,4 @@
-## Work in progress -no files yet! ##
+## Work in progress - no files yet! ##
 
 # TicTacToeJS #
 
