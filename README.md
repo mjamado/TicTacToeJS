@@ -43,7 +43,7 @@ You can see that last call in the `play` function. Everytime there's a play to b
 
 If everything went normally, a strategic play must be made. I won't rundown the options: there's a flowchart in this repository (`tictactoe.png`) with the full strategy, and I implement it fully in the `strategicPlay` function.
 
-A last word of warning about the code: beware of the board rotation in the `playChoose` function. I could've done that in tenths of other ways, but that was what looked more sleek, altthough I'll admit it's not the easiest to understand.
+A last word of warning about the code: beware of the board rotation in the `playChoose` function. I could've done that in tenths of other ways, but that was what looked more sleek, although I'll admit it's not the easiest to understand.
 
 ### How to use just about anywhere ###
 
