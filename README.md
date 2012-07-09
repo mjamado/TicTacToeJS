@@ -19,7 +19,7 @@ There are three ways to make an unbeatable game AI:
 2.  Implement a neural network &ndash; this will start pretty dumb, but after a few thousand games it should be unbeatable;
 3.  Implement an heuristics-based solution, making it play like an expert human would.
 
-Tic-tac-toe is a very good candidate to a brute-force approach: the total number of plays is 9!, or 362880; actually, it would be much less, since most of the plays can be achieved by rotating the board. However, there's not much *I* in that AI...
+Tic-tac-toe is a very good candidate to a brute-force approach: the total number of plays is 9!, or 362880; actually, it would be much less, since most of the plays can be achieved by rotating the board. However, there's not much "I" in that AI...
 
 The neural network solution is a fun one, and often used in complex scenarios, given that somebody has the time (or the scripted games) to train it. Away from the code of the neural network itself (which could be reused for a bazillion other things), this solution would be the smallest one, code-wise.
 
@@ -40,7 +40,7 @@ Therefore, I can ask for something like `playChoose(undefined, {what: "anything"
 
 You can see that last call in the `play` function. Everytime there's a play to be made, the following *questions* are asked to the engine:
 
-- can I win now? 
+- can I win now?
 - in case I can't, do I have to block a winning position from the opponent?
 
 If everything went normally, a strategic play must be made. I won't rundown the options: there's a flowchart in this repository (`tictactoe.png`) with the full strategy, and I implement it fully in the `strategicPlay` function.

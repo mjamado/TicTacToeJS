@@ -1,0 +1,76 @@
+.ticTacToeBoard {
+	@include background(linear-gradient(top, $complementColor, lighten($complementColor, 20%)));
+	@include border-radius(1em);
+	@include single-box-shadow($darkComplementColor, 0.167em, 0.167em, 0.5em, 0);
+	padding: 1em;
+	overflow: hidden;
+	float: left;
+
+	.ticTacToeSquare {
+		display: inline-block;
+		border: 1px solid $darkBaseColor;
+		@include border-radius(0.1em);
+		@include box-shadow($darkBaseColor, 0.02em, 0.02em, 0.05em, 0);
+		@include background(linear-gradient(top, desaturate(lighten($baseColor, 60%), 100%), desaturate(lighten($baseColor, 40%), 100%)));
+		font-size: $fontSizeUp_4;
+		line-height: 1em;
+		width: 1em;
+		height: 1em;
+		margin: 0 0.1em 0.1em 0;
+		text-align: center;
+		float: left;
+		cursor: default;
+
+		&.available {
+			@include background(linear-gradient(top, lighten($baseColor, 60%), lighten($baseColor, 40%)));
+			cursor: pointer;
+		}
+
+		&.firstCol {
+			clear: left;
+		}
+
+		&.lastCol {
+			margin-right: 0;
+		}
+
+		&.lastRow {
+			margin-bottom: 0;
+		}
+
+		&.winning {
+			@include background(linear-gradient(top, lighten($highlightColor, 60%), lighten($highlightColor, 40%)));
+		}
+	}
+}
+
+.ticTacToeScore {
+	float: left;
+	margin-left: 1em;
+	@include background(linear-gradient(top, $complementColor, lighten($complementColor, 20%)));
+	@include border-radius(1em);
+	@include single-box-shadow($darkComplementColor, 0.167em, 0.167em, 0.5em, 0);
+	padding: 0.5em;
+
+	label {
+		display: inline-block;
+		width: 10em;
+		text-align: right;
+		font-weight: bold;
+		margin-right: 0.5em;
+	}
+}
+
+.ticTacToeEndGame {
+	font-family: $alternativeFontFamily;
+	@include adjust-font-size-to($fontSizeUp_2, 3);
+	@include background(linear-gradient(top, lighten($baseColor, 60%), lighten($baseColor, 40%)));
+	border: 1px solid $darkBaseColor;
+	@include border-radius(0.5em);
+	@include box-shadow($darkBaseColor, 0.167em, 0.167em, 0.5em, 0);
+	position: absolute;
+	top: 3em;
+	left: 5em;
+	right: 5em;
+	text-align: center;
+}
