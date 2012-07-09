@@ -1,5 +1,3 @@
-## Work in progress - no files yet! ##
-
 # TicTacToeJS #
 
 ## Unbeatable TicTacToe javascript player ##
