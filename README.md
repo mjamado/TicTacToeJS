@@ -32,13 +32,11 @@ This was the solution I implemented.
 At every step, a request is made for a play (function `playChoose`), with a *what* and a *where*:
 
 - the *what* is either *center*, *corner*, *wall*, a combination of these, or *undefined*, which is interpreted as *anything*;
-- the *where* is an object with a *what*, and one or more of a *me*, a *you, and a *none*:
-  - *what* is what to look for in the board: valid values are *anything*, *rowOrCol* and *rowAndCol* (other could be implemented, but are not needed so...);
+- the *where* is an object with a *what*, and one or more of a *me*, a *you*, and a *none*:
+  - *what* is what to look for in the board: valid values are *anything*, *rowOrCol* and *rowAndCol* (other could be implemented, but are not needed, so...);
   - *me*, *you* and *none* are quantities of plays in the *what*: 0, 1 or 2.
 
-Therefore, I can ask for something like `playChoose(undefined, {what: "anything", me: 2})`, and it'll find a position where there's allready two plays by me. This is actually called in the game, and it's a search for a winning play.
-
-You can see that last call in the `play` function. Everytime there's a play to be made, the following *questions* are asked to the engine:
+Therefore, I can ask for something like `playChoose(undefined, {what: "anything", me: 2})`, and it'll find a position where there's allready two plays by me. This is actually called in the game, and it's a search for a winning play. You can see that in the `play` function. Everytime there's a play to be made, the following *questions* are asked to the engine:
 
 - can I win now?
 - in case I can't, do I have to block a winning position from the opponent?
@@ -57,9 +55,9 @@ First and foremost, include the .js file (or a minimized, gzipped one) in your p
 <script type="text/javascript" src="tictactoe.js"></script>
 ```
 
-Then, style the game components via CSS. I included a SCSS file with everything necessary (don't know what SCSS is? [What a good day to learn](http://sass-lang.com/)).
+Then, create a container element (a simple `div` will do fine) and style the game components via CSS. I included a SCSS file with everything necessary (don't know what SCSS is? [What a good day to learn](http://sass-lang.com/)).
 
-Finally, anywhere you would see fit, call it:
+Finally, anywhere you would see fit, call it (the first parameter is the `id` of the container element):
 
 ```javascript
 tictactoe.init('ticTacToeHolder');
