@@ -23,7 +23,7 @@ Tic-tac-toe is a very good candidate to a brute-force approach: the total number
 
 The neural network solution is a fun one, and often used in complex scenarios, given that somebody has the time (or the scripted games) to train it. Away from the code of the neural network itself (which could be reused for a bazillion other things), this solution would be the smallest one, code-wise.
 
-The heuristic solution is the most dificult to implement for most type of games. It implies creating a set of rules to be followed, for every possible situation. Again, tic-tac-toe is suitable to this kind of solution, because only three moves, at most, can be problematic, the fourth and the eventual fifth can be played for the win or tie.
+The heuristic solution is the most dificult to implement for most type of games. It implies creating a set of rules to be followed, for every possible situation, as compact as possible. Again, tic-tac-toe is suitable to this kind of solution, because only three moves, at most, can be problematic; the fourth and the eventual fifth can be played for the win or tie.
 
 This was the solution I implemented.
 
